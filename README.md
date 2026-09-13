@@ -62,11 +62,13 @@ skills/
 
 ## Credits
 
-`writer.md` adapts ideas from two MIT-licensed skills (originals kept in `skills/lfunc/sources/`):
+`lfunc/writer.md` is built on two MIT-licensed skills. Thanks to their creators:
 
-- [grilling](https://github.com/mattpocock/skills) by Matt Pocock: question rounds with recommended answers
-- [karpathy-guidelines](https://github.com/multica-ai/andrej-karpathy-skills): think before coding, simplicity first, surgical changes
+- **[grilling](https://github.com/mattpocock/skills/tree/main/skills/productivity/grilling)** by **Matt Pocock** ([@mattpocock](https://github.com/mattpocock)): the question-round format with a recommended answer for each question.
+- **[karpathy-guidelines](https://github.com/multica-ai/andrej-karpathy-skills)** by **Jiayuan Zhang** ([@forrestchang](https://github.com/forrestchang)), based on observations by **Andrej Karpathy** ([@karpathy](https://github.com/karpathy)): think before coding, simplicity first, surgical changes.
+
+The original files are kept unmodified in `skills/lfunc/sources/`.
 
 ## License
 
-MIT
+MIT - see [LICENSE](LICENSE). Third-party files keep their own MIT licenses - see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

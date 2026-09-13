@@ -22,8 +22,5 @@ SOFTWARE.
 
 ---
 
-skills/lfunc/sources/grilling.md
-Copyright (c) 2026 Matt Pocock - MIT License (https://github.com/mattpocock/skills)
-
-skills/lfunc/sources/karpathy-guidelines.md
-From https://github.com/multica-ai/andrej-karpathy-skills - MIT License
+This license covers the original work in this repository. Third-party files
+under skills/lfunc/sources/ keep their own licenses - see THIRD_PARTY_NOTICES.md.
