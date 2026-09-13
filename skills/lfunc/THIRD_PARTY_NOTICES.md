@@ -42,12 +42,16 @@ SOFTWARE.
 - **Author:** Jiayuan Zhang ([@forrestchang](https://github.com/forrestchang)), based on observations by Andrej Karpathy ([@karpathy](https://github.com/karpathy))
 - **Source:** https://github.com/multica-ai/andrej-karpathy-skills (`skills/karpathy-guidelines/SKILL.md`), originally published as `forrestchang/andrej-karpathy-skills`
 
-The source repository publishes no separate LICENSE file; the skill file itself declares `license: MIT` in its frontmatter (preserved in the copy). No copyright line is published, so the notice below names the repository's author and contributors. The standard MIT terms apply:
+The source repository has no LICENSE file and publishes no copyright notice. It declares the MIT license in three places, quoted verbatim:
+
+- `skills/karpathy-guidelines/SKILL.md` frontmatter: `license: MIT`
+- `.claude-plugin/plugin.json`: `"author": { "name": "forrestchang" }` and `"license": "MIT"`
+- `README.md`: `## License` followed by `MIT`
+
+The `license: MIT` frontmatter is preserved unmodified in the copy. The standard MIT permission notice is reproduced below; no copyright line is added because none was published upstream.
 
 ```
 MIT License
-
-Copyright (c) 2026 Jiayuan Zhang and andrej-karpathy-skills contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

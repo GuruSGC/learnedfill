@@ -32,6 +32,11 @@ def func2():
 ```
 → asks how big, how to build it, and whether you want just the declaration or the loops too, then writes only what you confirm.
 
+```
+/lfill stub a class Stack with push, pop, peek and implement push using a python list
+```
+→ writes the three method stubs, then asks where the list should live, what the parameter is called, and which end is the top before writing only `push`.
+
 ## Install
 
 **Claude Code (manual):**
@@ -53,12 +58,32 @@ Restart your session after installing so the commands are picked up.
 
 ```
 skills/
-  lfill/SKILL.md        router
-  template/SKILL.md     stubs only
-  lfunc/SKILL.md        functionality
-  lfunc/writer.md       how lfunc clarifies, suggests, and writes
-  lfunc/sources/        upstream skills writer.md is adapted from
+  lfill/SKILL.md                  router
+  template/SKILL.md               stubs only
+  lfunc/SKILL.md                  functionality
+  lfunc/writer.md                 how lfunc clarifies, suggests, and writes
+  lfunc/sources/                  upstream skills writer.md is adapted from
+  lfunc/THIRD_PARTY_NOTICES.md    licenses for lfunc/sources/
+  */LICENSE                       MIT license, copied into each skill so it travels with installs
 ```
+
+## Troubleshooting
+
+| Problem | Fix |
+|---|---|
+| `/lfill` (or `/template`, `/lfunc`) is not recognized | Check each folder landed at `~/.claude/skills/<name>/SKILL.md` (not nested one level deeper), then restart the session. |
+| `/lfill` announces a pick but can't load the sub-skill | All three folders must be installed side by side in the same skills directory. Install all of them, not just `lfill`. |
+| It picked `/template` when you wanted code (or vice versa) | Say so - it switches without argument. Or call `/template` or `/lfunc` directly. |
+| `/lfunc` asks questions when you already know exactly what you want | Give the exact line or approach in the request (e.g. `add dp = [[0]*(m+1) for _ in range(n+1)]`) and it writes it directly. |
+| The skills start on their own | They shouldn't. Check each `SKILL.md` still has `disable-model-invocation: true` in its frontmatter. |
+
+## Privacy
+
+learnedfill is plain Markdown instructions. It contains no scripts, makes no network requests or API calls, and collects, stores, or transmits no data.
+
+## Support
+
+Questions, bugs, and security concerns: open an issue at [github.com/GuruSGC/learnedfill/issues](https://github.com/GuruSGC/learnedfill/issues). Maintainer: [@GuruSGC](https://github.com/GuruSGC).
 
 ## Credits
 
@@ -71,4 +96,6 @@ The original files are kept unmodified in `skills/lfunc/sources/`.
 
 ## License
 
-MIT - see [LICENSE](LICENSE). Third-party files keep their own MIT licenses - see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+MIT - see [LICENSE](LICENSE). Third-party files keep their own MIT licenses - see [skills/lfunc/THIRD_PARTY_NOTICES.md](skills/lfunc/THIRD_PARTY_NOTICES.md).
+
+This project is not affiliated with or endorsed by Anthropic, Matt Pocock, Jiayuan Zhang, or Andrej Karpathy.
